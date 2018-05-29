@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
+let magicIndexSorted = MagicIndex()
+var sortedArray: [Int] = [0,2,3,4,7,6]
+print("The magic index is:\(magicIndexSorted.magicFastSortedListDistinctElements(sortedArray: sortedArray)) from the array:\(sortedArray) ")
