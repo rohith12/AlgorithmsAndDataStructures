@@ -12,6 +12,7 @@
 		383429E520BD9F4000FAE63B /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429E420BD9F4000FAE63B /* Subsets.swift */; };
 		383429E720BDAD2D00FAE63B /* MultiplyRecursviely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429E620BDAD2D00FAE63B /* MultiplyRecursviely.swift */; };
 		383429EA20BDB76100FAE63B /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429E920BDB76100FAE63B /* MergeSort.swift */; };
+		38DA8DBD20CAE1E00090FE3D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		383429E420BD9F4000FAE63B /* Subsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subsets.swift; sourceTree = "<group>"; };
 		383429E620BDAD2D00FAE63B /* MultiplyRecursviely.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyRecursviely.swift; sourceTree = "<group>"; };
 		383429E920BDB76100FAE63B /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		383429C620BD84F700FAE63B /* AlgorithmsAndDataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				38DA8DBB20CAE1CD0090FE3D /* LinkedList */,
 				383429E820BDB74F00FAE63B /* Sorting */,
 				383429CE20BD850100FAE63B /* RecurisionAndDynamicProgramming */,
 				383429C720BD84F700FAE63B /* main.swift */,
@@ -88,6 +91,14 @@
 				383429E920BDB76100FAE63B /* MergeSort.swift */,
 			);
 			path = Sorting;
+			sourceTree = "<group>";
+		};
+		38DA8DBB20CAE1CD0090FE3D /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38DA8DBD20CAE1E00090FE3D /* LinkedList.swift in Sources */,
 				383429E520BD9F4000FAE63B /* Subsets.swift in Sources */,
 				383429E720BDAD2D00FAE63B /* MultiplyRecursviely.swift in Sources */,
 				383429D020BD851F00FAE63B /* MagicIndex.swift in Sources */,
