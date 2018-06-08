@@ -20,12 +20,16 @@ import Foundation
 //let mergeSort = MergeSort()
 //print("merge sort: \(mergeSort.mergeSort([2,12,15,1,0,10,25]))")
 
-var list = LinkedList<Int>()
-list.insert(10)
-list.insert(20)
-list.insert(30)
-list.insert(40)
+//var list = LinkedList<Int>()
+//list.insert(10)
+//list.insert(20)
+//list.insert(30)
+//list.insert(40)
+//
+//list.printAllVaues()
+//list.reverseLinkedList()
+//list.printAllVaues()
 
-list.printAllVaues()
-list.reverseLinkedList()
-list.printAllVaues()
+
+var countingSort = CountingSort.countingSort([2,12,15,1,0,10,25])
+print(countingSort)

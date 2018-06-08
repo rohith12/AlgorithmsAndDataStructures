@@ -14,6 +14,7 @@
 		383429EA20BDB76100FAE63B /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429E920BDB76100FAE63B /* MergeSort.swift */; };
 		386D55FE20CB11B400BB3BCA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D55FC20CB11B400BB3BCA /* Queue.swift */; };
 		386D55FF20CB11B400BB3BCA /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D55FD20CB11B400BB3BCA /* Stacks.swift */; };
+		386D560120CB11F200BB3BCA /* CountingSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D560020CB11F200BB3BCA /* CountingSort.swift */; };
 		38DA8DBD20CAE1E00090FE3D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		383429E920BDB76100FAE63B /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		386D55FC20CB11B400BB3BCA /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		386D55FD20CB11B400BB3BCA /* Stacks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
+		386D560020CB11F200BB3BCA /* CountingSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingSort.swift; sourceTree = "<group>"; };
 		38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				383429E920BDB76100FAE63B /* MergeSort.swift */,
+				386D560020CB11F200BB3BCA /* CountingSort.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				386D55FF20CB11B400BB3BCA /* Stacks.swift in Sources */,
 				38DA8DBD20CAE1E00090FE3D /* LinkedList.swift in Sources */,
 				386D55FE20CB11B400BB3BCA /* Queue.swift in Sources */,
+				386D560120CB11F200BB3BCA /* CountingSort.swift in Sources */,
 				383429E520BD9F4000FAE63B /* Subsets.swift in Sources */,
 				383429E720BDAD2D00FAE63B /* MultiplyRecursviely.swift in Sources */,
 				383429D020BD851F00FAE63B /* MagicIndex.swift in Sources */,
