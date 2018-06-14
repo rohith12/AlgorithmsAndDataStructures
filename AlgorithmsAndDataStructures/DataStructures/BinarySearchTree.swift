@@ -48,6 +48,7 @@ extension BinaryNode{
                 newNode.parent = self
                 leftChild = newNode
             }
+            
         }else{
             if let rightChild = rightChild{
                 rightChild.addNode(value: value)
@@ -59,6 +60,54 @@ extension BinaryNode{
         }
     }
     
+}
+
+//MARK: BST Traversals
+
+extension BinaryNode{
+  //Inorder traversal
+  // left value < node value < right value
+  
+    public class func traverseInorder(node: BinaryNode?){
+        
+        guard let node = node else{
+            return
+        }
+        
+        BinaryNode.traverseInorder(node: node.leftChild)
+        print(node.value)
+        BinaryNode.traverseInorder(node: node.rightChild)
+        
+    }
+    
+    //Preorder traversal
+    //  node value<left value < < right value
+    
+    public class func traversePreOrder(node: BinaryNode?){
+        
+        guard let node = node else{
+            return
+        }
+        print(node.value)
+        BinaryNode.traversePreOrder(node: node.leftChild)
+        BinaryNode.traversePreOrder(node: node.rightChild)
+        
+    }
+    
+    
+    //Postorder traversal
+    //  left value < right value node value<
+    
+    public class func traversePostorder(node: BinaryNode?){
+        
+        guard let node = node else{
+            return
+        }
+        BinaryNode.traversePostorder(node: node.leftChild)
+        BinaryNode.traversePostorder(node: node.rightChild)
+        print(node.value)
+
+    }
 }
 
 
