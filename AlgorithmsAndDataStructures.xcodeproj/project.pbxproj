@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381FB3C220D2D7F500BD3F33 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381FB3C120D2D7F500BD3F33 /* BinarySearchTree.swift */; };
 		383429C820BD84F700FAE63B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429C720BD84F700FAE63B /* main.swift */; };
 		383429D020BD851F00FAE63B /* MagicIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429CF20BD851F00FAE63B /* MagicIndex.swift */; };
 		383429E520BD9F4000FAE63B /* Subsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383429E420BD9F4000FAE63B /* Subsets.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		381FB3C120D2D7F500BD3F33 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		383429C420BD84F700FAE63B /* AlgorithmsAndDataStructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsAndDataStructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		383429C720BD84F700FAE63B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		383429CF20BD851F00FAE63B /* MagicIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicIndex.swift; sourceTree = "<group>"; };
@@ -103,19 +105,12 @@
 		386D55FB20CB0A1B00BB3BCA /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				38DA8DBB20CAE1CD0090FE3D /* LinkedList */,
-			);
-			path = DataStructures;
-			sourceTree = "<group>";
-		};
-		38DA8DBB20CAE1CD0090FE3D /* LinkedList */ = {
-			isa = PBXGroup;
-			children = (
 				386D55FC20CB11B400BB3BCA /* Queue.swift */,
 				386D55FD20CB11B400BB3BCA /* Stacks.swift */,
 				38DA8DBC20CAE1E00090FE3D /* LinkedList.swift */,
+				381FB3C120D2D7F500BD3F33 /* BinarySearchTree.swift */,
 			);
-			path = LinkedList;
+			path = DataStructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +175,7 @@
 				38DA8DBD20CAE1E00090FE3D /* LinkedList.swift in Sources */,
 				386D55FE20CB11B400BB3BCA /* Queue.swift in Sources */,
 				386D560120CB11F200BB3BCA /* CountingSort.swift in Sources */,
+				381FB3C220D2D7F500BD3F33 /* BinarySearchTree.swift in Sources */,
 				383429E520BD9F4000FAE63B /* Subsets.swift in Sources */,
 				383429E720BDAD2D00FAE63B /* MultiplyRecursviely.swift in Sources */,
 				383429D020BD851F00FAE63B /* MagicIndex.swift in Sources */,

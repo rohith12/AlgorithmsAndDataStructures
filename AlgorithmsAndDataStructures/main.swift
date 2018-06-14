@@ -31,5 +31,12 @@ import Foundation
 //list.printAllVaues()
 
 
-var countingSort = CountingSort.countingSort([2,12,15,1,0,10,25])
-print(countingSort)
+
+//var countingSort = CountingSort.countingSort([2,12,15,1,0,10,25])
+//print(countingSort)
+
+
+var rootNode = BinaryNode(value: 10)
+rootNode.insertNodeFromRoot(value: 20)
+rootNode.insertNodeFromRoot(value: 5)
+rootNode.insertNodeFromRoot(value: 21)
