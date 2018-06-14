@@ -39,6 +39,7 @@ extension BinaryNode{
     }
     
     private func addNode(value: T){
+        
         if value < self.value{
            
             if let leftChild = leftChild{
@@ -50,6 +51,7 @@ extension BinaryNode{
             }
             
         }else{
+            
             if let rightChild = rightChild{
                 rightChild.addNode(value: value)
             }else{
@@ -57,7 +59,9 @@ extension BinaryNode{
                 newNode.parent = self
                 rightChild = newNode
             }
+            
         }
+        
     }
     
 }
@@ -66,7 +70,7 @@ extension BinaryNode{
 
 extension BinaryNode{
   //Inorder traversal
-  // left value < node value < right value
+  // left value > node value > right value
   
     public class func traverseInorder(node: BinaryNode?){
         
@@ -81,7 +85,7 @@ extension BinaryNode{
     }
     
     //Preorder traversal
-    //  node value<left value < < right value
+    //  node value > left value > right value
     
     public class func traversePreOrder(node: BinaryNode?){
         
@@ -96,7 +100,7 @@ extension BinaryNode{
     
     
     //Postorder traversal
-    //  left value < right value node value<
+    //  left value > right value > node value
     
     public class func traversePostorder(node: BinaryNode?){
         
@@ -108,6 +112,32 @@ extension BinaryNode{
         print(node.value)
 
     }
+}
+
+//MARK: BST Search
+
+extension BinaryNode{
+  
+    public func search(value: T) -> BinaryNode?{
+        if value == self.value{
+            return self
+        }
+        
+        if value < self.value{
+            guard let left = leftChild else{
+                return nil
+            }
+            return left.search(value: value)
+        }else{
+            guard let right = rightChild else{
+                return nil
+            }
+            return right.search(value: value)
+        }
+        
+        
+    }
+    
 }
 
 
