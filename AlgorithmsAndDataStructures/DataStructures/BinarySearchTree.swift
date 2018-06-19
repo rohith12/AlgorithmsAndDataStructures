@@ -140,5 +140,29 @@ extension BinaryNode{
     
 }
 
+//MARK: validate BST
+extension BinaryNode{
+    
+    public func validateBST(_ root: BinaryNode?, _ min: T, _ max: T) -> Bool{
+        
+        guard let node = root else{
+            return true
+        }
+        
+        if node.value > min && node.value < max{
+           
+            return validateBST(node.leftChild, min, node.value) && validateBST(node.rightChild, node.value, max)
+            
+        }else{
+            
+            return false
+
+        }
+        
+        
+        
+    }
+}
+
 
 

@@ -7,14 +7,11 @@
 //
 
 import Foundation
-
-
-
-
 class BFSNode{
     
     var val: String? = nil
     var edges: [BFSNode]? = nil
+    
     var searched: Bool = false
     var parent: BFSNode? = nil
   
@@ -65,7 +62,7 @@ class Graph{
     
     init() {
        nodes = [BFSNode]()
-       graph = [String:BFSNode]()
+       graph = [String: BFSNode]()
     }
     
     func setStartNode(string: String) -> BFSNode{
@@ -126,10 +123,10 @@ class BFSAlgorithm{
             graph = Graph()
             
             for i in 0..<movies!.count{
-                
-                
+
                 var title: String?
                 var movieTitleNode: BFSNode?
+                
                 if let titleCheck = movies![i]["title"] as? String{
                     title = titleCheck
                     movieTitleNode = BFSNode(value: title!)
@@ -141,6 +138,7 @@ class BFSAlgorithm{
                     cast = castCheck
                     
                     for j in 0..<cast!.count{
+                        
                        let actor: String = cast![j]
                        let actorNode: BFSNode?
                     
@@ -163,11 +161,11 @@ class BFSAlgorithm{
     
     func bfs(actorName: String){
         
-        
         let start = graph?.setStartNode(string: actorName)
-        
         let end = graph?.setEndNode(string: "Kevin Bacon")
         
+        
+        //BFS
         var queue: [BFSNode] = [BFSNode]()
         start?.searched = true
         queue.append(start!)

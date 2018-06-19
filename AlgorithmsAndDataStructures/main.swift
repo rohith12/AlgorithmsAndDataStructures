@@ -36,12 +36,18 @@ import Foundation
 //print(countingSort)
 
 
-//var rootNode = BinaryNode(value: 10)
-//rootNode.insertNodeFromRoot(value: 20)
-//rootNode.insertNodeFromRoot(value: 5)
-//rootNode.insertNodeFromRoot(value: 21)
-//rootNode.insertNodeFromRoot(value: 8)
-//rootNode.insertNodeFromRoot(value: 4)
+var rootNode = BinaryNode(value: 10)
+rootNode.insertNodeFromRoot(value: 20)
+rootNode.insertNodeFromRoot(value: 5)
+rootNode.insertNodeFromRoot(value: 21)
+rootNode.insertNodeFromRoot(value: 8)
+rootNode.insertNodeFromRoot(value: 4)
+rootNode.insertNodeFromRoot(value: 1)
+
+
+print(rootNode.validateBST(rootNode, Int.min, Int.max))
+
+
 ////print("Inorder traversal")
 ////BinaryNode.traverseInorder(node: rootNode)
 ////print("Post traversal")
@@ -55,7 +61,7 @@ import Foundation
 
 
 
-var bfs = BFSAlgorithm()
-bfs.setup()
-bfs.bfs(actorName: "Rachel McAdams")
+//var bfs = BFSAlgorithm()
+//bfs.setup()
+//bfs.bfs(actorName: "Rachel McAdams")
 
