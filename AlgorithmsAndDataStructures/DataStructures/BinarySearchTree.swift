@@ -112,6 +112,30 @@ extension BinaryNode{
         print(node.value)
 
     }
+    
+    
+    func levelOrderTraversal(node: BinaryNode?){
+        
+        guard let node = node else{
+            return
+        }
+        
+        var queue: Queue<BinaryNode> = Queue()
+        queue.enqueue(element: node)
+        
+        while !queue.isEmpty() {
+            if let root = queue.dequeue(){
+                print(root.value)
+                if root.leftChild != nil{
+                    queue.enqueue(element: root.leftChild!)
+                }
+                if root.rightChild != nil{
+                    queue.enqueue(element: root.rightChild!)
+                }
+            }
+           
+        }
+    }
 }
 
 //MARK: BST Search
@@ -119,6 +143,7 @@ extension BinaryNode{
 extension BinaryNode{
   
     public func search(value: T) -> BinaryNode?{
+        
         if value == self.value{
             return self
         }
@@ -138,13 +163,15 @@ extension BinaryNode{
         
     }
     
+    
+   
+    
 }
 
 //MARK: validate BST
 extension BinaryNode{
     
     public func validateBST(_ root: BinaryNode?, _ min: T, _ max: T) -> Bool{
-        
         guard let node = root else{
             return true
         }
@@ -158,9 +185,6 @@ extension BinaryNode{
             return false
 
         }
-        
-        
-        
     }
 }
 

@@ -36,17 +36,18 @@ import Foundation
 //print(countingSort)
 
 
-var rootNode = BinaryNode(value: 10)
-rootNode.insertNodeFromRoot(value: 20)
-rootNode.insertNodeFromRoot(value: 5)
-rootNode.insertNodeFromRoot(value: 21)
-rootNode.insertNodeFromRoot(value: 8)
-rootNode.insertNodeFromRoot(value: 4)
-rootNode.insertNodeFromRoot(value: 1)
-
-
-print(rootNode.validateBST(rootNode, Int.min, Int.max))
-
+//var rootNode = BinaryNode(value: 1)
+//rootNode.insertNodeFromRoot(value: 20)
+//rootNode.insertNodeFromRoot(value: 5)
+//rootNode.insertNodeFromRoot(value: 21)
+//rootNode.insertNodeFromRoot(value: 8)
+//rootNode.insertNodeFromRoot(value: 4)
+//
+//
+////print(rootNode.validateBST(rootNode, Int.min, Int.max))
+//
+//print("level order traversal")
+//BinaryNode.traverseInorder(node: rootNode)
 
 ////print("Inorder traversal")
 ////BinaryNode.traverseInorder(node: rootNode)
@@ -64,4 +65,7 @@ print(rootNode.validateBST(rootNode, Int.min, Int.max))
 //var bfs = BFSAlgorithm()
 //bfs.setup()
 //bfs.bfs(actorName: "Rachel McAdams")
+
+let quick = QuickSort()
+print("quick sort: \(quick.quick(array: [2,12,15,1,0,10,25]))")
 
